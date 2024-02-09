@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #455a64;
+  line-height: 1.5;
+}
+
+.contenedor {
+  max-width: 1170px;
+  margin: 0 auto 1rem;
+  padding: 1.5rem;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(69, 90, 100, 0.7);
+  border-radius: 5px;
+}
+@media screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.servicios {
+  list-style: none;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .servicios {
+    text-align: left;
+  }
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info-empresa {
+  padding: 1rem;
+  background-color: #ccd7dc;
+}
+.info-empresa h3 {
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .info-empresa h3 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.nombre-empresa {
+  color: #263137;
+}
+
+.contacto {
+  padding: 1rem;
+  background-color: #eaeff1;
+}
+.contacto h3 {
+  margin-bottom: 1rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.25rem;
+}
+.formulario label {
+  display: block;
+}
+.formulario button,
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccd7dc;
+}
+.formulario textarea {
+  resize: none;
+}
+
+.full {
+  grid-column: 1/3;
+}
+
+.boton-enviar {
+  background-color: #ccd7dc;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boton-enviar:focus, .boton-enviar:hover {
+  background-color: #455a64;
+  color: #fff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+  .footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+
+ header{
+   background-color: #F9F8FC;
+
+   width: 100%;
+   height: 10px;  
+   background-position: center bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 10vh;
+   
+   align-items: center;
+ }
+
+ header img{
+    padding: 18px 10px;
+}
+
+ #logo{
+   margin: auto;
+   height: 250px;
+   width: 320px;
+   text-align: center;
+ }
+
+ #logo h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 58px;
+  }
+
+
+nav{
+    background-image: url("origen.jpg");
+    height: 60px;
+    background-color:#17181C;
+    text-align: center;
+    margin: auto;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+nav ul li{
+    float: left;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+}
+
+nav ul li a:hover{
+  background-color: #929fb3;
+}
+
+
+
+#titulo {
+    width: 70%;
+    max-width: 850px;
+    margin: 0 auto;
+    
+  }
+
+#descripcion {
+    text-align: justify;
+    padding: 15px 10px;
+    width: 70%;
+    max-width: 850px;
+    height: 70%;
+    margin: 0 auto;
+    
+  }
+
+#texto2{
+    
+    font-weight: bold;
+  }
+
+  .main h1{
+    
+    text-align: center;
+  }
+
+  .cuadrado {
+    width: 500px;          
+    height: 80px;  
+    text-align: unset;
+    color: white;       
+    background: rgb(17, 17, 17);    
+    border: 1px solid #000; 
+  }
+
+  .cuadrado2 {
+    width: 500px;          
+    height: 160px;  
+    text-align: unset;
+    color: white;       
+    background: rgb(17, 17, 17);    
+    border: 1px solid #000; 
+  }
+
+  .texto{
+    margin-left: 10%;    
+    margin-right: 20%;
+    margin-top: 50px;
+    text-align: justify;
+}

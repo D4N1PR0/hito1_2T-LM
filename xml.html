@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+	
+	<title>Programming Blog</title>
+</head>
+
+<body>
+    <header class="bg-primary text-white p-3">
+		<div class="container">
+			<div class="d-flex justify-content-between"> 
+				<nav>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="hito_1_2T.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="xml.html">XML</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="json.html">JSON</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+   
+    <section class="texto">
+        <h2>1. Historia de XML</h2>
+        <div >
+            Desde que IBM inventó el GML hasta que se creó el XML.
+            <br><br>
+
+            El XML proviene de un lenguaje que inventó IBM allá por los años 70. El lenguaje de IBM se llama GML (General Markup Language) y surgió por la necesidad que tenían en la empresa de almacenar grandes cantidades de información de temas diversos.
+            Imaginar por un momento la cantidad de documentación que generaría IBM sobre todas las áreas en las que trabajaba e investigaba, y la cantidad de información que habrá generado hasta hoy. Así pues, necesitaban una manera de guardar la información y los expertos de IBM se inventaron GML, un lenguaje con el que poder clasificarlo todo y escribir cualquier documento para que se pueda luego procesar adecuadamente.
+            <br><br>
+            Este lenguaje gustó mucho a la gente de ISO, una entidad que se encarga de normalizar cuantas cosas podáis imaginar para los procesos del mundo actual, de modo que allá por el 86 trabajaron para normalizar el lenguaje, creando el SGML, que no era más que el GML pero estándar (Standar en inglés).
+            <br><br>
+            SGML es un lenguaje muy trabajado, capaz de adaptarse a un gran abanico de problemas y a partir de él se han creado los siguientes sistemas para almacenar información.
+            <br><br>
+            Por el año 89, para el ámbito de la red Internet, un usuario que había conocido el lenguaje de etiquetas (Markup) y los hiperenlaces creo un nuevo lenguaje llamado HTML, que fue utilizado para un nuevo servicio de Internet, la Web. Este lenguaje fue adoptado rápidamente por la comunidad y varias organizaciones comerciales crearon sus propios visores de HTML y riñeron entre ellos para hacer el visor más avanzado, inventándose etiquetas como su propia voluntad les decía. Desde el 96 hasta hoy una entidad llamada W3C ha tratado de poner orden en el HTML y establecer sus reglas y etiquetas para que sea un estándar. Sin embargo el HTML creció de una manera descontrolada y no cumplió todos los problemas que planteaba la sociedad global de Internet.
+            <br><br>
+            El mismo W3C en el 98 empezó y continúa, en el desarrollo de XML (Extended Markup Language). En este lenguaje se ha pensado mucho más y muchas personas con grandes conocimientos en la materia están trabajando todavía en su gestación. Pretendían solucionar los carencias del HTML en lo que se respecta al tratamiento de la información. Problemas del HTML como:
+            <br><br>
+            El contenido se mezcla con los estilos que se le quieren aplicar.
+            No permite compartir información con todos los dispositivos, como pueden ser ordenadores o teléfonos móviles.
+            La presentación en pantalla depende del visor que se utilice.
+            Imagínese, una persona que conoce el HTML y lo difícil que puede llegar a ser entender su código, que tuviese que procesarlo para extraer datos que necesite en otras aplicaciones. Sería muy difícil saber dónde está realmente la información que busca, siempre mezclada entre etiquetas &lt;FONT&gt;, &lt;TABLE&gt;, &lt;TD&gt;, etc... Esto es una mala gestión de la información y el XML la soluciona.
+            <br><br><br>
+        </div>
+        <div>
+            <h2>2. Normas de uso y sintaxis</h2>
+            Debe seguir estas reglas al crear la sintaxis XML:
+            <br><br>
+            Todos los elementos XML deben tener una etiqueta de cierre.
+            Las etiquetas XML son sensibles a mayúsculas y minúsculas.
+            Todos los elementos XML deben estar debidamente anidados.
+            Todos los documentos XML debe tener un elemento raíz.
+            Los valores de atributo siempre deben estar entre comillas.
+            Todos los elementos XML deben tener una etiqueta de cierre
+            No está permitido omitir la etiqueta de cierre al crear la sintaxis XML. Los elementos XML deben tener una etiqueta de cierre.
+            <br><br>
+            Incorrecto:
+            <br>
+            <div class="cuadrado">
+                <br>
+                &lt;body&gt;See Spot run.<br>
+                &lt;body&gt;See Spot catch the ball.
+            </div>
+            <br><br>
+            Correcto:
+            <br>
+            <div class="cuadrado">
+                <br>
+                &lt;body&gt;See Spot run.&lt;/body&gt;<br>
+                &lt;body&gt;See Spot catch the ball.&lt;/body&gt;
+            </div>
+            <br><br>
+            Las etiquetas XML son sensibles a mayúsculas y minúsculas<br>
+            Cuando crea documentos XML, la etiqueta &lt; Body &gt; es diferente de la etiqueta &lt; body&gt;.
+            <br><br>
+            Incorrecto:
+            <br>
+            <div class="cuadrado">
+                <br>
+                &lt;Body&gt;See Spot run.&lt;/body&gt;
+            </div>
+            <br><br>
+            Correcto:
+            <br>
+            <div class="cuadrado">
+                <br>
+                &lt;body&gt;See Spot run.&lt;/body&gt;
+            </div>
+            <br><br>
+            Todos los elementos XML deben estar debidamente anidados<br>
+            Un anidamiento incorrecto de las etiquetas no tiene sentido para XML.
+            <br><br>
+            Incorrecto:
+            <br>
+            <div class="cuadrado">
+                <br>
+                 &lt;b&gt;&lt;i&gt;This text is bold and italic.&lt;/b&gt;&lt;/i&gt;
+            </div>
+            <br><br>
+            Correcto:
+            <br>
+            <div class="cuadrado">
+                <br>
+                &lt;b&gt;&lt;i&gt;This text is bold and italic.&lt;/i&gt;&lt;/b&gt;
+            </div>
+            <br><br>
+            Todos los documentos XML deben tener un elemento raíz<br>
+            Todos los documentos XML deben contener un par de etiquetas individuales para definir un elemento raíz. Todos los demás elementos deben estar dentro de este elemento raíz. Todos los elementos pueden tener subelementos (elementos hijo). Los subelementos deben estar anidados correctamente dentro de su elemento padre.
+            <br><br>
+            Ejemplo:
+            <br>
+            <div class="cuadrado2">
+                <br>
+                &lt;root&gt;<br>
+                &lt;child&gt;<br>
+                &emsp; &lt;subchild&gt;.....&lt;/subchild&gt;<br>
+                &lt;/child&gt;<br>
+                &lt;/root&gt;
+            </div>
+            <br><br>
+            Los valores de atributo siempre deben estar entre comillas<br>
+            No está permitido omitir las comillas alrededor de los valores de atributos. Los elementos XML pueden tener atributos en pares nombre/valor; sin embargo, el valor de atributo siempre debe estar entre comillas.
+            <br><br>
+            Incorrecto:
+            <br>
+            <div class="cuadrado2">
+                <br>
+                &lt;?xml version= “1.0” encoding=“ISO-8859-1”?&gt;<br>
+                &lt;note date=05/05/05&gt;<br>
+                &lt;to&gt;Dick&lt;/to&gt;<br>
+                &lt;from&gt;Jane&lt;/from&gt;<br>
+                &lt;/note&gt;
+            </div>
+            <br><br>
+            Correcto:
+            <br>
+            <div class="cuadrado2">
+                <br>
+                &lt;?xml version= “1.0” encoding=“ISO-8859-1”?&gt;<br>
+                &lt;note date=”05/05/05”&gt;<br>
+                &lt;to&gt;Dick&lt;/to&gt;<br>
+                &lt;from&gt;Jane&lt;/from&gt;<br>
+                &lt;/note&gt;
+                <br><br>
+            </div>
+            En el documento incorrecto, el atributo de fecha del elemento note no está entre comillas.<br><br><br>
+        </div>
+        <div>
+            <h2>3. Aplicaciones en el ámbito empresarial</h2>
+            <br>
+            XML permite, de un modo sumamente sencillo, estructurar la información de modo de enviarla con total seguridad de que el receptor sabrá que ese dato tiene una relación con otro dato dentro de la misma estructura enviada, también puede saber qué tipo de dato es el que está recibiendo (XML Schema), puede establecer cómo mostrarlo (XSL) e incluso cómo tiene que devolverlo (SOAP)
+            <br>
+            Así XML permite la comunicación de una aplicación a otra, o recibir y enviar datos estructurados mediante Internet sin tener que idear mecanismos complejos o excesivamente pesados para rearmar la información como en su origen.
+            <br><br>
+            XML tiene múltiples utilizaciones. La transmisión de datos es su origen, pero integrada con XML Schema se puede definir el tipo de dato que está viajando, o sise permiten valores nulos, repetidos, decimales o si se trata de un dato que mantiene una integridad referencial con otra información en el mismo documento transmitido.
+            <br>
+            XML es la fuente de SOAP, un protocolo basado en el estándar que permite el envío de paquetes de información bidireccional para la integración de aplicaciones remotas. Pudiendo de este modo transmitir datos por referencia e incluso en una transacción.
+            <br><br>
+            XML con XSL permite modelar la información visualmente para su presentación de modo de generar presentaciones dinámicas principalmente orientadas a B2C
+            <br><br>
+            XML es un modo de parametrizar aplicaciones de forma sencilla, legible y comprensible tanto por aplicaciones como por personas y fácilmente accesible desde cualquier tipo de aplicación
+            <br><br>
+            El 99% de las aplicaciones de escritorio actuales soporta lectura, escritura, importaciones y exportaciones a este formato para persistir la información de manera consistente, y con cada nueva versión XML se integra más en el Back Office de los sistemas de escritorio, gestión, Web, etc.
+            <br><br>
+        </div>
+   
+    </section>
+</body>
